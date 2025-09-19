@@ -13,7 +13,7 @@
   <meta property="og:description" content="Play in the DOOM in browser." />
   <meta property="og:type" content="game" />
   <meta property="og:url" content="https://thedoggybrad.github.io/doom_on_js-dos/" />
-  <meta property="og:image" content="https://thedoggybrad.github.io/doom_on_js-dos/DOOM.png" />
+  <meta property="og:image" content="./DOOM.png?v=2" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="app.css">
@@ -40,7 +40,12 @@
         image-rendering: pixelated;
         image-rendering: crisp-edges;
     }
-    #DOOM > .dosbox-container > .dosbox-overlay { background: url("https://thedoggybrad.github.io/doom_on_js-dos/DOOM.png"); }
+    #DOOM > .dosbox-container > .dosbox-overlay { 
+        background: url("./DOOM.png?v=2");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     #DOOM > .dosbox-container > .dosbox-overlay > .dosbox-start {
         border-radius: 17px 17px 17px 17px;
         -moz-border-radius: 17px 17px 17px 17px;
